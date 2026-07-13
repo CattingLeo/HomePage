@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CattingLeo — Projects</title>
+  <meta name="description" content="Lev's projects: Windows multiseat software and Minecraft mods.">
+  <style>
+    :root {
+      --bg: #0f1115;
+      --card: #181b22;
+      --card-hover: #1f232c;
+      --text: #e8eaed;
+      --muted: #9aa0a9;
+      --accent: #6ea8fe;
+      --border: #262a33;
+    }
+    @media (prefers-color-scheme: light) {
+      :root {
+        --bg: #f7f7f8;
+        --card: #ffffff;
+        --card-hover: #f0f2f5;
+        --text: #1a1c20;
+        --muted: #5f6570;
+        --accent: #2563eb;
+        --border: #e2e5ea;
+      }
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    main {
+      max-width: 720px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 4rem 1.5rem 2rem;
+      flex: 1;
+    }
+    header { margin-bottom: 3rem; }
+    h1 { font-size: 2rem; font-weight: 700; }
+    header p { color: var(--muted); margin-top: 0.5rem; }
+    .projects {
+      display: grid;
+      gap: 1rem;
+    }
+    .project {
+      display: block;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.25rem 1.5rem;
+      text-decoration: none;
+      color: inherit;
+      transition: background 0.15s ease, transform 0.15s ease;
+    }
+    .project:hover {
+      background: var(--card-hover);
+      transform: translateY(-2px);
+    }
+    .project-title {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.75rem;
+    }
+    .project-title h2 { font-size: 1.1rem; font-weight: 600; }
+    .lang {
+      font-size: 0.75rem;
+      color: var(--muted);
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      padding: 0.1rem 0.6rem;
+      white-space: nowrap;
+    }
+    .project p { color: var(--muted); font-size: 0.925rem; margin-top: 0.4rem; }
+    footer {
+      text-align: center;
+      padding: 2rem 1.5rem;
+      color: var(--muted);
+      font-size: 0.85rem;
+    }
+    footer a { color: var(--accent); text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>CattingLeo</h1>
+      <p>My projects — mostly Windows tools and Minecraft mods.</p>
+    </header>
+
+    <div class="projects">
+      <a class="project" href="https://github.com/CattingLeo/MultiSeat">
+        <div class="project-title">
+          <h2>MultiSeat</h2>
+          <span class="lang">C#</span>
+        </div>
+        <p>Turn one Windows PC into two workplaces — two mice, two keyboards, two screens, used by two people at the same time.</p>
+      </a>
+
+      <a class="project" href="https://github.com/CattingLeo/Minecraft-PVP-Mod">
+        <div class="project-title">
+          <h2>Minecraft PVP Mod</h2>
+          <span class="lang">Java</span>
+        </div>
+        <p>A Fabric mod for Minecraft that adds PVP-focused features and mechanics.</p>
+      </a>
+
+      <a class="project" href="https://github.com/CattingLeo/Minecraft-Structure-Relocator">
+        <div class="project-title">
+          <h2>Minecraft Structure Relocator</h2>
+          <span class="lang">Java</span>
+        </div>
+        <p>A tool for moving structures from one place to another in Minecraft worlds.</p>
+      </a>
+
+      <a class="project" href="https://github.com/CattingLeo/Minecraft-Fullset-Mod">
+        <div class="project-title">
+          <h2>Minecraft Fullset Mod</h2>
+          <span class="lang">Batchfile</span>
+        </div>
+        <p>A Minecraft mod project with full-set gear features.</p>
+      </a>
+    </div>
+  </main>
+
+  <footer>
+    <a href="https://github.com/CattingLeo">github.com/CattingLeo</a> · Source of this page: <a href="https://github.com/CattingLeo/HomePage">HomePage</a>
+  </footer>
+</body>
+</html>
